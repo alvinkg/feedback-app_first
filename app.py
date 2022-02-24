@@ -16,7 +16,7 @@ else:
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://mmpzihwyrywhnx:01de4caea82625ac738a2e29370eb62295498343dd17cb7a212ec46621e6065b@ec2-50-19-32-96.compute-1.amazonaws.com:5432/d830a4hn8om6dd'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
+ 
 db = SQLAlchemy(app)
 
 class Feedback(db.Model):
